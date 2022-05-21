@@ -1,0 +1,204 @@
+:root{ /*raiz do documento css, podemos declarar variaveis */ 
+--vermelho: #E50914; /* cores principais do site*/
+--preta: #141414;
+
+}
+
+*{ /* reset css , o * chama todos a pagina para fazer a configuração*/
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* mantem o tamanho das "caixas do html" nao pertmi==*/
+}
+/* elementos base */
+
+body{
+background:var(--preta);
+/* font-family: 'Arial', Times, serif; */
+font-family: Luminari, 'fantasy';
+color:white;
+
+}
+
+header .container {
+    margin: 0px;
+    padding:10px 10px 10px 10px;
+    display: flex; /* Maneira de alinhar os elementos em tela, "destravando as caixas" do HTML*/
+    flex-direction: row; /* proprieda padrão do displahy flex*/
+    align-items: center; /* alinha os elementos no centro do container  */
+    justify-content: space-between; /* separa espaços iguais entre as tags "filhas" do elemento "pai"*/
+    border-style:solid;
+    border-color: #E50914;
+    border-width: 0 0 3px 0;
+}
+
+header .container h2{
+    font-size: 50px;
+}
+
+header .logo{
+    color:var(--vermelho);
+    /* font-family: 'Arial black', Times; */
+    font-family:  Luminari, 'fantasy';
+    font-size: 40px;
+    margin-left: 5px;
+
+}
+
+header .logopt2{
+    color: rgb(255,255,255);
+}
+
+.MenuSup{
+    font-size: 20px;
+
+}
+
+.MenuSup a{
+    background-color: rgb(30,40,42);
+    padding: 7px;
+    border-radius: 10px;
+
+
+}
+header nav a{
+
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+
+    color: #FFF
+}
+
+/* filme principal*/
+
+
+.filme-principal{
+    padding: 0px;
+    font-size: 16px;
+ 
+    background-image: url('/img/PlayersHandbook.jpg');
+
+    background-size:cover;
+	background-position:center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;  
+
+    height: 400px;
+
+
+    display: flex;
+    flex-direction: column;
+    /*as estilos jutify-content e o align itens se invertem dependendo 
+    de como determinamos o flex direction, nesse caso como definimos como coluna 
+    o jutify center ficara no meio da coluna e o align itens começara a esquerda*/
+    justify-content: center; 
+    align-items: flex-start;
+}
+
+.filme-principal .container{
+    padding: 10px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(50, 50, 50, 0.20);
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 7%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+
+
+.botao{
+    background-color:rgba(0, 0, 0, 0.5) ;
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .4s ease all;
+    width: max-content;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.botao i{
+    margin-right: 8px;
+
+}
+
+.container{
+    margin-left: 20px;
+
+}
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    border-style: outset;
+    border-color:#848484;
+    
+
+}
+
+.carrosel-Boardgame{
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+.carrosel-Boardgame h2{
+    margin: 10px;
+
+}
+
+.carrosel-Eletronico{
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+.carrosel-Eletronico h2{
+    margin: 10px;
+
+}
+
+.carrosel-MMORPG{
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.carrosel-MMORPG h2{
+    margin: 10px;
+
+}
+
+
+/* .descricao{
+    width: 68%;
+} */
